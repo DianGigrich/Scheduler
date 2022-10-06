@@ -21,26 +21,78 @@
     <p id="currentDay" class="lead"> </p>
   </header>
   <div class="container">
-    <div class="table-responsive-lg">
-      <table class="table table-bordered">
-        <tbody>
-          <tr>
-            <th scope="row" class="hour time-block" ><strong>9 am</strong></td>
-            <td class="description"><textarea id="textInput" name="textInput" rows="4" cols="50">
-enter text
+    <table>
+      <tr scope="row">
+        <th class="time-block hour"><strong>9 am</strong></td>
+        <td><textarea class = "textOutput" id="textInput" name="textInput" rows="4" cols="50">
+
 </textarea></td>
-            <td class="saveBtn"><button>save</button></td>
-          </tr>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+      <tr scope="row">
+        <th class="time-block hour"><strong>10 am</strong></td>
+        <td><textarea id="textInput" name="textInput" rows="4" cols="50">
 
-        </tbody>
-      </table>
-    </div>
+</textarea></td>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+      <tr scope="row">
+        <th class="time-block hour"><strong>11 am</strong></td>
+        <td><textarea id="textInput" name="textInput" rows="4" cols="50">
+
+</textarea></td>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+      <tr scope="row">
+        <th class="time-block hour"><strong>12 am</strong></td>
+        <td><textarea id="textInput" name="textInput" rows="4" cols="50">
+
+</textarea></td>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+      <tr scope="row">
+        <th class="time-block hour"><strong>1 pm</strong></td>
+        <td><textarea id="textInput" name="textInput" rows="4" cols="50">
+
+</textarea></td>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+      <tr scope="row">
+        <th class="time-block hour"><strong>2 pm</strong></td>
+        <td><textarea id="textInput" name="textInput" rows="4" cols="50">
+
+</textarea></td>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+      <tr scope="row">
+        <th class="time-block hour"><strong>3 pm</strong></td>
+        <td><textarea id="textInput" name="textInput" rows="4" cols="50">
+
+</textarea></td>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+      <tr scope="row">
+        <th class="time-block hour"><strong>4 pm</strong></td>
+        <td><textarea id="textInput" name="textInput" rows="4" cols="50">
+
+</textarea></td>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+      <tr scope="row">
+        <th class="time-block hour"><strong>5 pm</strong></td>
+        <td><textarea id="textInput" name="textInput" rows="4" cols="50">
+
+</textarea></td>
+        <td class="saveBtn"><button id="save">save</button></td>
+      </tr>
+
   </div>
-
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="/script.js"></script>
+
 </body>
 
 </html>
@@ -61,7 +113,7 @@ function addProjectData(event) {
 
     var totalEarnings = (hourlyRate * 8) *daysTillDue
 
-    var tableRowEl = $('<tr').append(nameTDEl)
+    var tableRowEl = $('<tr>').append(nameTDEl)
 
     projectDisplayEl.append(tableRowEl)
 }
