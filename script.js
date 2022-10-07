@@ -1,7 +1,16 @@
 var save = document.querySelector(".saveBtn")
 
+// TODAY'S TIME
+function displayTime() {
+    let today = moment().format("MMM Do, YYYY")
+    $("#currentDay").text(today)
+    console.log(today)
+}
 
-//   TIME OF DAY
+setInterval(displayTime, 1000)
+
+
+//   TIME OF DAY colors
 var inputrow = [
     "#textInput1",
     "#textInput2",
@@ -21,7 +30,7 @@ function colors() {
     for (var i = 0; i <= inputrow.length; i++) {
 
         var currentHour = parseInt(moment().format("H"))
-        // var currentHour = moment().hours();
+
         var hourCompare = parseInt(moment(9+i, "H").format("H"));
 
         console.log(currentHour, "current hour")
@@ -37,14 +46,7 @@ function colors() {
     }
 }
 
-// TODAY'S TIME
-function displayTime() {
-    let today = moment().format("MMM Do, YYYY")
-    $("#currentDay").text(today)
-    console.log(today)
-}
 
-setInterval(displayTime, 1000)
 
 colors()
 
@@ -109,8 +111,6 @@ var ti9 = document.querySelector("#textInput9");
 ti9.textContent = localStorage.getItem('5pm')
 
 ti9.value = localStorage.getItem('5pm')
-
-
 
 
 
