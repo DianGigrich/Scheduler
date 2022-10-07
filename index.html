@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
   <link rel="stylesheet" href="style.css" />
   <title>Work Day Scheduler</title>
 </head>
@@ -21,75 +21,54 @@
     <p id="currentDay" class="lead"> </p>
   </header>
   <div class="container">
-    <table>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime="0900"><strong>9 am</strong></time>
-        </th>
-        <td><textarea class="textOutput" id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime="1000"><strong>10 am</strong></time>
-        </th>
-        <td><textarea id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime="1100"><strong>11 am</strong></time>
-        </th>
-        <td><textarea id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime="1200"><strong>12 pm</strong></time>
-        </th>
-        <td><textarea id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime="1300"><strong>1 pm</strong></time>
-        </th>
-        <td><textarea id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime="1400"><strong>2 pm</strong></time>
-        </th>
-        <td><textarea id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime=0900><strong>3 pm</strong></time>
-        </th>
-        <td><textarea id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime=0900><strong>4 pm</strong></time>
-        </th>
-        <td><textarea id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-      <tr class="row">
-        <th class="time-block hour">
-          <time datetime=0900><strong>5 pm</strong></time>
-        </th>
-        <td><textarea id="textInput" name="textInput" rows="4" cols="50"> </textarea></td>
-        <td class="saveBtn"><button id="save">save</button></td>
-      </tr>
-
+      <div class="row time-block">
+        <time class="hour col-1"><strong>9 am</strong></time>
+        <textarea class="past col-8" id="textInput1" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save">Save All</button>
+      </div>
+      <div class="row time-block">
+        <time class="hour col-1"><strong>10 am</strong></time>
+        <textarea class="past col-8" id="textInput2" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <time class="hour col-1"><strong>11 am</strong></time>
+        <textarea class="past col-8" id="textInput3" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <time class="hour col-1"><strong>12 pm</strong></time>
+        <textarea class="past col-8" id="textInput4" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <time class="hour col-1"><strong>1 pm</strong></time>
+        <textarea class="past col-8" id="textInput5" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <time class="hour col-1"><strong>2 pm</strong></time>
+        <textarea class="past col-8" id="textInput6" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <time class="hour col-1"><strong>3 pm</strong></time>
+        <textarea class="past col-8" id="textInput7" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <time class="hour col-1"><strong>4 pm</strong></time>
+        <textarea class="past col-8" id="textInput8" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <time class="hour col-1"><strong>5 pm</strong></time>
+        <textarea class="past col-8" id="textInput9" name="textInput"> </textarea>
+        <button class="saveBtn col-1" id="save"><i class="fa fa-save"></i></button>
+      </div>
   </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="/script.js"></script>
 
